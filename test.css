@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 1300px;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(0, 0, 0.5, 0.5), rgba(0, 0, 0.5, 0.5)), url("home-decor-ideas-04-1507234366.jpg");
+    background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* botton coding */
+
+.btn-group {
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#btn1,
+#btn2 {
+    outline: 0;
+}
+
+.btn-group {
+    top: 60px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-class {
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    border-radius: 10px;
+}
+
+.btn-class:hover {
+    background-color: rgb(126, 150, 90);
+    border: 0;
+}
+
+.active-btn,
+input[type='submit']:active,
+input[type='submit']:visited {
+    background-color: rgb(61, 61, 155);
+}
+
+
+/* botton coding end */
+
+
+/* coding for form and animation */
+
+.form-group {
+    /* position: relative; */
+    text-align: center;
+}
+
+.form-item {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    box-shadow: 2px 1px 20px 8px white;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+legend {
+    font-size: 1.5em;
+    color: rgb(61, 61, 155);
+    font-weight: bolder;
+    background-color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.form-active {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+
+.form-inactive-left {
+    transform: translate(100%, 0);
+    opacity: 0;
+}
+
+.form-inactive-right {
+    transform: translate(-100%, 0);
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+    background-color: rgb(156, 156, 124);
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    background-color: none;
+    background: none;
+    margin-left: 10px;
+    flex: 1;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+input[type='submit'] {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(128, 172, 63);
+    border-radius: 10px;
+    cursor: pointer;
+    border: outset;
+    outline: 0;
+}
+
+input[type='submit']:hover {
+    background-color: green;
+    transition: all 0.5s ease-in;
+    color: white;
+    font-weight: bolder;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+
+/* coding for form and animation end */
